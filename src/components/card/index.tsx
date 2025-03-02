@@ -5,7 +5,7 @@ import { Card } from "antd";
 import "./index.less";
 
 export interface CardProps extends AntdCardProps {
-  theme?: "default" | "style1" | "style2";
+  theme?: "default" | "simple";
 }
 
 export const TntCard: FC<CardProps> = ({
@@ -16,7 +16,7 @@ export const TntCard: FC<CardProps> = ({
 }) => {
   const cardTheme = {
     themeDefault: theme === "default",
-    themeS1: theme === "style1",
+    simple: theme === "simple",
   };
 
   return (

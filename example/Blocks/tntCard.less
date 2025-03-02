@@ -1,0 +1,93 @@
+.tnt-card {
+    &.ant-card {
+        background: #fff;
+        border-radius: 0;
+    }
+
+    .ant-card-head {
+        & {
+            border-bottom: none;
+            padding: 0 20px;
+        }
+
+        .ant-card-head-wrapper {
+            position: relative;
+
+            &::before {
+                position: absolute;
+                top: 21px;
+                width: 4px;
+                height: 14px;
+                display: block;
+                content: '';
+                background: #3E63FF;
+                border-radius: 2px;
+            }
+        }
+
+        .ant-card-head-title {
+            & {
+                position: relative;
+                font-size: 16px;
+                color: #3A3B3E;
+                padding: 16px;
+            }
+        }
+
+        .ant-card-extra {
+            .extra {
+                a {
+                    margin-left: 20px;
+                }
+
+                .anticon {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .tnt-card-tab-list {
+        & {
+            list-style: none;
+            display: inline-block;
+            margin-left: 40px;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 16px;
+            font-weight: normal;
+            font-size: 14px;
+            color: #3A3B3E;
+            cursor: pointer;
+
+            &.active {
+                color: #3E63FF;
+            }
+        }
+    }
+
+    .ant-card-body {
+        padding: 10px 30px 30px;
+
+        >:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .ant-empty {
+        position: relative;
+
+        .ant-empty-image {
+            margin-bottom: 10px;
+        }
+
+        .ant-empty-description a {
+            color: #4A6DFF;
+        }
+    }
+}
