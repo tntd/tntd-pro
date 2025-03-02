@@ -5,6 +5,7 @@ import Title from "./Blocks/Title";
 import WaterMark from "./Blocks/WaterMark";
 import Handle from "./Blocks/Handle";
 import Status from "./Blocks/Status";
+import Flex from "./Blocks/Flex";
 import "./index.less";
 
 export default () => {
@@ -30,6 +31,10 @@ export default () => {
       label: "Status",
       value: "status",
     },
+    {
+      label: "Flex",
+      value: "flex",
+    },
   ];
   return (
     <div className="example-box">
@@ -52,6 +57,7 @@ export default () => {
         {name === "waterMark" && <WaterMark />}
         {name === "handle" && <Handle />}
         {name === "status" && <Status />}
+        {name === "flex" && <Flex />}
       </div>
     </div>
   );

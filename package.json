@@ -24,7 +24,8 @@
         "dist"
     ],
     "dependencies": {
-        "classnames": "^2.3.1"
+        "classnames": "^2.3.1",
+        "fast-safe-stringify": "^2.1.1"
     },
     "devDependencies": {
         "@ant-design/icons": "^5.6.1",
