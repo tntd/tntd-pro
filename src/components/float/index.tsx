@@ -2,7 +2,7 @@
 "use client";
 
 import { forwardRef, useMemo } from "react";
-import { mapObject } from "@/utils";
+import { mapObject } from "../../utils";
 
 export interface FloatProps extends React.HTMLAttributes<HTMLDivElement> {
   placement?:

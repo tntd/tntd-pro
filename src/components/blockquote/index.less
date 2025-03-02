@@ -1,0 +1,51 @@
+.blockquote {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    border-left: 4px solid;
+    background-color: #f7fafc;
+    color: #2d3748;
+    margin: 16px 0;
+
+    &.solid {
+        background-color: #3182ce;
+        color: #ffffff;
+    }
+
+    &.red {
+        border-color: #e53e3e;
+    }
+
+    &.blue {
+        border-color: #3182ce;
+    }
+
+    &.center {
+        align-items: center;
+    }
+
+    &.end {
+        align-items: flex-end;
+    }
+
+    .blockquote-icon {
+        // position: relative;
+    }
+
+    .blockquote-content {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    .blockquote-caption {
+        font-size: 0.875rem;
+        align-self: flex-end;
+
+        cite {
+            font-style: normal;
+        }
+    }
+}

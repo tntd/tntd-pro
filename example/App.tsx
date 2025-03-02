@@ -6,11 +6,16 @@ import WaterMark from "./Blocks/WaterMark";
 import Handle from "./Blocks/Handle";
 import Status from "./Blocks/Status";
 import Flex from "./Blocks/Flex";
+import Blockquote from "./Blocks/Blockquote";
 import "./index.less";
 
 export default () => {
   const [name, setName] = useState("card");
   const menuList = [
+    {
+      label: "Blockquote",
+      value: "blockquote",
+    },
     {
       label: "Title",
       value: "title",
@@ -53,6 +58,7 @@ export default () => {
       </div>
       <div className="right">
         {name === "title" && <Title />}
+        {name === "blockquote" && <Blockquote />}
         {name === "card" && <Card />}
         {name === "waterMark" && <WaterMark />}
         {name === "handle" && <Handle />}

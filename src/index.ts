@@ -1,4 +1,4 @@
-import { FloatProps } from "./components/float/index";
+export { default as Blockquote } from "./components/blockquote";
 export { default as Box, type BoxProps } from "./components/box";
 export { default as Card } from "./components/card";
 export { default as Flex, type FlexProps } from "./components/flex";
