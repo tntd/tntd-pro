@@ -1,3 +1,5 @@
+@import '../../styles/variables.less';
+
 .tntd-title {
   & {
     position: relative;
@@ -12,19 +14,23 @@
       h3 {
         margin-left: 0;
       }
+
       &::before {
         display: none;
       }
     }
+
     &.is-simple {
       .count::before {
         display: none;
       }
     }
+
     &.small {
       .count {
         font-size: 20px;
         margin-right: 12px;
+
         &::before {
           width: 20px;
           height: 15px;
@@ -33,10 +39,12 @@
         }
       }
     }
+
     &.middle {
       .count {
         font-size: 24px;
         margin-right: 12px;
+
         &::before {
           width: 24px;
           height: 15px;
@@ -44,10 +52,12 @@
         }
       }
     }
+
     &.large {
       .count {
         font-size: 28px;
         margin-right: 12px;
+
         &::before {
           width: 28px;
           height: 18px;
@@ -55,6 +65,7 @@
         }
       }
     }
+
     .count {
       position: relative;
       top: -1px;
@@ -69,6 +80,7 @@
         'Microsoft YaHei' !important;
       letter-spacing: 1px;
     }
+
     .count::before {
       position: absolute;
       display: block;
@@ -83,56 +95,67 @@
       -webkit-transform: rotate(-45deg);
     }
   }
+
   &.small {
     & {
       height: 28px;
       line-height: 28px;
     }
+
     .tntd-title-text {
       h3 {
         font-size: 14px;
       }
+
       &::before {
         height: 14px;
         top: 7px;
       }
     }
   }
+
   &.middle {
     & {
       height: 36px;
       line-height: 36px;
     }
+
     .tntd-title-text {
       h3 {
         font-size: 18px;
       }
+
       &::before {
         height: 18px;
         top: 9px;
       }
     }
   }
+
   &.large {
     & {
       height: 40px;
       line-height: 40px;
     }
+
     .tntd-title-text {
       h3 {
         font-size: 20px;
       }
+
       &::before {
         height: 20px;
         top: 9px;
       }
     }
   }
+
   .tntd-title-text {
     & {
       position: relative;
       float: left;
     }
+
     h3 {
       font-size: 16px;
       color: #17233d;
@@ -142,6 +165,7 @@
       margin-left: 10px;
       display: inline-block;
     }
+
     span {
       position: relative;
       top: 1px;
@@ -150,6 +174,7 @@
       margin-right: 10px;
       line-height: 1;
     }
+
     &::before {
       position: absolute;
       left: 0;
@@ -161,6 +186,7 @@
       margin-right: 8px;
     }
   }
+
   .tntd-title-extra {
     & {
       position: relative;

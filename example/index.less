@@ -1,0 +1,31 @@
+.example-box {
+    display: flex;
+    flex-direction: row;
+
+    .left {
+        width: 200px;
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                height: 40px;
+                line-height: 40px;
+                padding-left: 12px;
+                border-radius: 8px;
+                cursor: pointer;
+
+                &.active {
+                    color: #126bfb;
+                    background-color: #f1f2f3;
+                }
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+        padding: 30px;
+    }
+}
