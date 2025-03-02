@@ -10,7 +10,10 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*", "declarations.d.ts"]
 }

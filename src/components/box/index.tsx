@@ -1,7 +1,6 @@
 import React, { CSSProperties, ElementType } from "react";
 
 export type BoxProps = {
-  type?: "default" | "circle" | "square";
   size?: number | string;
   bg?: string;
   round?: number | string;
@@ -11,10 +10,10 @@ export type BoxProps = {
   React.HTMLAttributes<HTMLElement>;
 
 const Box: React.FC<BoxProps> = ({
-  type = "default",
   size,
   bg,
   round,
+  circle,
   as: Component = "div",
   style,
   children,
@@ -30,14 +29,11 @@ const Box: React.FC<BoxProps> = ({
     boxStyle.width = size;
     boxStyle.height = size;
   }
-  if (type === "circle") {
+  if (circle) {
     boxStyle.borderRadius = "50%";
     boxStyle.display = "flex";
     boxStyle.justifyContent = "center";
     boxStyle.alignItems = "center";
-  }
-  if (type === "square") {
-    boxStyle.borderRadius = round;
   }
 
   return (
